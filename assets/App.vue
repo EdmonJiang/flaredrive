@@ -3,7 +3,7 @@
       @dragenter.prevent 
       @dragover.prevent 
       @drop.prevent="onDrop"
-      :style="{ background: "burlywood" }"
+      :style="{ background: 'burlywood' }"
   >
     <progress v-if="uploadProgress !== null" :value="uploadProgress" max="100"></progress>
     <UploadPopup v-model="showUploadPopup" @upload="onUploadClicked" @createFolder="createFolder"></UploadPopup>
@@ -596,8 +596,8 @@ export default {
           window.history.pushState(null, "", url.toString());
         }
         document.title = this.cwd.replace(/.*\/(?!$)|\//g, "") === "/" 
-            ? "FlareDrive-R2 - 优雅的 Cloudflare R2 网盘文件库"
-            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 优雅的 Cloudflare R2 网盘文件库`;
+            ? "云网盘-文件库"
+            :`${this.cwd.replace(/.*\/(?!$)|\//g, "") || "/" } - 云网盘-文件库`;
       },
       immediate: true,
     },
