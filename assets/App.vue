@@ -3,7 +3,7 @@
       @dragenter.prevent 
       @dragover.prevent 
       @drop.prevent="onDrop"
-      :style="{ backgroundImage: `url('${backgroundImageUrl}')` }"
+      :style="{ background: burlywood }"
   >
     <progress v-if="uploadProgress !== null" :value="uploadProgress" max="100"></progress>
     <UploadPopup v-model="showUploadPopup" @upload="onUploadClicked" @createFolder="createFolder"></UploadPopup>
@@ -210,7 +210,7 @@ export default {
     showUploadPopup: false,
     uploadProgress: null,
     uploadQueue: [],
-    backgroundImageUrl: "/assets/bg-light.webp"
+    background: burlywood
   }),
 
   computed: {
