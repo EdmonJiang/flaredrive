@@ -1,5 +1,5 @@
 <template>
-  <div class="main" style="background: burlywood"
+  <div class="main" style="background: burlywood;"
       @dragenter.prevent 
       @dragover.prevent 
       @drop.prevent="onDrop"
@@ -209,7 +209,7 @@ export default {
     showUploadPopup: false,
     uploadProgress: null,
     uploadQueue: [],
-    background: burlywood
+    background: "burlywood"
   }),
 
   computed: {
